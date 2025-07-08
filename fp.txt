@@ -1,0 +1,195 @@
+file permission :
+--------------------
+3 types of permissions:
+read , write & execute 
+==================================
+2 METHODS we can assign the permissions
+--------------------
+1.symbolical method(r=read , w=write , x=execute)
+2.numerical method(r=4 , w=2 , x=1)
+==========================================
+read=open the file ,no edit permission
+
+write =open the file ,modify the file 
+
+execute = run the programms =====>programtic files (links , c program , shell script 
+java ------) 
+===============================================================
+****3 catogories of users in linux -------->to use the file 
+=========================================
+1.user owner :creator of the file 
+ram------>java.py
+
+
+2.group :team head . team people 
+devops=ram , d1 d2 d3 ===============================>others 
+
+3.others :other than user /group /group people =====are others
+=====================================================================================
+how to list the detailed permision for any file /folder 
+-----------------------------------------------
+#ls -ld file name /folder name 
+ls -ld today-new
+d(directory)rwx(user)r-x(group)r-x(others). 2 root(user owner) root(group owner) 
+6 Dec 29 20:24(date & time of creating ) today-new(folder name )
+=====================================================
+
+ls -ld newfile9090
+-(file)rw-(user)r--(group)r--(others). 1 root root 0 Dec 29 20:25 newfile9090
+=====================================================================================
+default file * folder premission 
+--------------->
+ ls -ld docs1
+drwxr-xr-x. 2 root root 6 Dec 29 20:33 docs1(755)
+[root@apponixlab ~]# ls -ld docs2
+drwxr-xr-x. 2 root root 6 Dec 29 20:33 docs2
+[root@apponixlab ~]# ls -ld docs3
+drwxr-xr-x. 2 root root 6 Dec 29 20:33 docs3
+[root@apponixlab ~]# ls -ld ap1
+-rw-r--r--. 1 root root 0 Dec 29 20:34 ap1
+[root@apponixlab ~]# ls -ld ap2
+-rw-r--r--. 1 root root 0 Dec 29 20:34 ap2
+[root@apponixlab ~]# ls -ld ap3
+-rw-r--r--. 1 root root 0 Dec 29 20:34 ap3(644)
+================================================================
+to modify the permission in symbolical mode :
+-----------------------------------------
+
+chmod (change modification)
+===============>
+operators (to give ..>+ /to remove....>- ,to eqaulise..> = )
+===========================================
+create a file /folder -->default permission
+ls 
+ls -ld
+ls -lia
+ls -a
+============================================
+to asign the permissions in numerical method 
+----------------------------------------------
+#chmod 466 ap1
+
+r=4 
+w=2
+x=1
+
+u-rwx=4+2+1
+g--wx=0+2+1
+o--wx=0+2+1
+========================================================
+
+recursive function inside the file permission ======on folders 
+----------------------------------------------
+recursive (carrying inherited [permissions]
+
+#chmod -R 750 folder 
+
+mkdir yaml
+[root@apponixlab ~]# 
+[root@apponixlab ~]# 
+[root@apponixlab ~]# cd yaml
+[root@apponixlab yaml]# touch h1 h2 h3 h4 
+[root@apponixlab yaml]# ls
+h1  h2  h3  h4
+[root@apponixlab yaml]# ls -ld h1 
+-rw-r--r--. 1 root root 0 Dec 29 21:11 h1
+[root@apponixlab yaml]# ls -ld h2
+-rw-r--r--. 1 root root 0 Dec 29 21:11 h2
+[root@apponixlab yaml]# ls -ld h3
+-rw-r--r--. 1 root root 0 Dec 29 21:11 h3
+[root@apponixlab yaml]# cd
+[root@apponixlab ~]# ls -ld yaml
+drwxr-xr-x. 2 root root 46 Dec 29 21:11 yaml
+[root@apponixlab ~]# 
+[root@apponixlab ~]# chmod -R 770 yaml
+[root@apponixlab ~]# ls -ld yaml
+drwxrwx---. 2 root root 46 Dec 29 21:11 yaml
+[root@apponixlab ~]# 
+[root@apponixlab ~]# 
+[root@apponixlab ~]# cd yaml
+[root@apponixlab yaml]# ls -ld h1
+-rwxrwx---. 1 root root 0 Dec 29 21:11 h1
+[root@apponixlab yaml]# ls -ld h2
+-rwxrwx---. 1 root root 0 Dec 29 21:11 h2
+[root@apponixlab yaml]# ls -ld h3
+-rwxrwx---. 1 root root 0 Dec 29 21:11 h3
+================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

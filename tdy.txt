@@ -1,0 +1,78 @@
+-------file & directory managemnt :
+--------------------------------
+file format ----->
+--------------------------
+2 types of files :
+-----------------------empty file , content file 
+>empty file :
+----------
+#touch test.txt
+
+>content file :
+#nano test1.txt----------->cntrl +x, press y ..> enter ..> 
+
+
+>#cat > test2.txt -->enter +cnrl +d=======>save the file
+-------------------------------------------------------------- 
+
+> vi test.txt -------->edit/modify any content or empty file 
+============================================================================
+
+
+directory =folder 
+(multiple files )
+==========================
+#mkdir new
+
+#cd ------>change direcory folder name ------>moving inside the folder 
+
+#cd ..=======>moving back one step down 
+
+#cd ~rahul ---------->moved inside the home direcytory of rahul account 
+============================================================================
+copy , move /rename 
+-------------------------
+copy the file :
+----------------------
+#cp source path desttination path
+#cat source 
+=====o/p===
+
+#cat destination 
+=========o/p======
+--------------------------------------------
+to rename /cut-paste 
+#mv sourcefile desination file 
+#cat destination file 
+-------o/p======
+
+#cat source file 
+==========no such file /dirctry ====delted 
+===================================================
+hard link and sof link 
+:
+------------------------------
+
+
+
+
+
+
+
+======================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

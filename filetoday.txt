@@ -1,0 +1,139 @@
+path===============>
+absolute path :--------exact path of the file in the root 
+ex: rahul@localhost #pwd 
+/root/photos 
+
+
+ex-windows --->c drive 
+=============================================
+
+and relative path ===========>the related path for the data files 
+
+ex: rahul@localhost#cd photos 
+"            "photos #cat image1
+"         " photos#pwd 
+"         "#/root/photos/image1 ============>relative path .......>
+
+
+ex:windows------>c drive /photos ===>c:/home/photos 
+=================================================================
+***hard link & soft link ========>take the backup 
+=================================
+#hardlink is used to take the backup of file ..
+
+
+----------------------------
+*softlink ------>used to take the backup of links 
+
+=======================================
+
+>what is diffrences b/w hardlink & soft;link?
+
+>wether softlink can be applied to take the backup of file /folder 
+
+
+>is hardlink suitable for folder backup?
+hard link not allowed for directory
+ =======
+==============================================================
+
+file permissions :
+-----------------------
+#ls --------->only list of files /folders/config file 
+
+#ls -ld -------------->deatiled permission .
+ls -ld apple.txt
+-(file type)rw-(user)r--(group)r--(others)(permission sets ). 1 root root 14 Feb 21 00:42 apple.txt
+=========================================
+3 types of permissions
+
+>read(open the file only , cannot edit , add the file content )
+>write(open + edit , add the content )
+>execute(any link clicked --->open ---> page
+
+===========================================
+how u will identify the file & folders in permission list 
+-------------------------------
+#ls -ld filename 
+
+-
+#ls -ld foldername 
+d(directory)
+
+============================================================================================
+3 ypes of users 
+
+>user(creator of file==ram)=u
+>group(team---1 t2 t3 )=g
+>others (other than group /user owner )=o
+
+=========================================================
+
+mode of file permissions :
+===========================
+absolute methode (assign permission in charecters - r w x)
+
+
+numerical method(assign permisions in numbers - read=4 , write=2 , execut=1)
+
+=============================================================
+to assign the file permissons , operators -----> + (add permission )
+
+-(remove permissions) , = (equally set permissions for  U G O )
+==================================================================
+* SETTING THE FILE PERMISSION IUSING ABSOLUTE METHOD:
+============================================
+APPONIX.sh ----------->file with shell script
+
+apponix.txt ---------->file is text format
+
+apponix.py ---------------->python file 
+
+apponix.html =============>html file 
+
+apponix.java------------------->file
+
+apponix-------------->file
+=====================================================
+#touch awsdocs.txt
+=====================================
+
+**default file permission (rw-r--r--)=====>644
+
+rw-(user)---->4+2+0------->6
+r--(group)------>4+0+0------>4
+r--(others)--------->4+0+0------>4
+
+===================================================
+**default folder perm,ission rwxr-xr-x=======>755
+
+rwx--->user----->4+2+1===>7
+r-x------>group ......>4+0+1---->5
+r-x==========>others......>4+0+1---->5
+=================================================
+
+umask >>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

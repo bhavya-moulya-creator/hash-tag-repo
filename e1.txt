@@ -1,0 +1,108 @@
+root password/system password breaking :
+--------------------------------------------
+root ---->user ...> default admin user= root user 
+----------------------------------------------------
+local users ....> manually ...>inside the linux shell ...> assign the password for 
+local users  but not for root user 
+------------------------------------------
+root password breaking method ...........> sysconfig ........>
+-----------------------------------------------------
+
+root is having more permissions than the local user .........>
+-----------------------------------------------------
+
+root-admin
+rahul,priya.....>local users 
+----------------------------------------------------------------
+>reboot....>
+>boot sequences has to be triggerd ...>by using and up and down arrow keys from keyboard(3)
+>press E key from key board ...>edit /modify the file 
+>search for linux-16 line ..........>press end key ........> UTF-8.....
+>UTF-8 ------>rd.break ------>cntrl +x(save)
+===============================================================
+switch_root #mount -oremount,rw /sysroot ---->removing the read file and making as re-wrtablefile /sysroot
+#chroot /sysroot---------->to chnage the path to /sysroot
+sh_4.2#passwd root------------>to change the p/w for root
+enter new password:redhat123(encrypted ----)
+re enter new password:redhat123
+#touch /.autorelabel------------->to create empty file .autorelabel file (overwrite the previous p/w with  new )
+#exit----------->logout from the sysroot path
+#exit-------------->logout from switch root path
+logout 
+--------wait fr the login page to appear .....
+....not listed ........> username: root , p/w : redhat123....>home page of root user 
+------------------------------------------------------------------
+
+linux is an open source operating system
+......................................
+pc ...>without an o.s ======baremetal 
+pc loaded with o.s files ............>windows /linux /mac ....>
+------------------------------------------------
+booting : processs of loading an o.s to a pc ...........>pc =on + 
+this is the first program that run on a machine to make the pc =on ------->booting 
+
+------------------------------------------------------------------
+
+pc is off ....>making on ........>booting 
+-------------------------------------------------
+function of BOOTING PROCESS:
+--------------------
+>POST (POWER ON SELF TEST)---->it checks the intrnl s/w config is working /not
+>BIOS (basic i/p -o/p system )--------->external h/w and internal h/w features are checked 
+working /not ..+ drivers. =====no errors ...>
+>BOOT STRAP LOADER : load the o.s from thye drive ,......>make the pc =on 
+=======================================================================
+bsod , n/w interface card issues , vga cable ....>
+===============================================================
+
+types of booing :
+------------------
+>cold booting :pc (on ).....>pressing power button ex:
+
+> warm booting ;restart the pc ...> to accept the changes ...........>application restart .
+----------------------------------------------------------------------------
+catogories of booting :
+---------------------------
+single booting process:one pc ....>one type of o.s ...>
+
+dual booting process :one pc >>>>>>>>>>> graeter than one o.s >linux , windows 
+-----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
