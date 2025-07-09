@@ -1,0 +1,19 @@
+progrmattic access keys :to access any aws resources 
+outside the aws console ....that is via command prompt/git bash , power shell ,
+we need accessskeys
+access keys =(seceret access key + programmatic access keys)==========
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+how to create accesss keys fr specified user 
+******1.user :.......>security credenials .......>access keys ...........>create 
+it will automatically generate .....(seceret access key + programmatic access keys)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+how to use /configure these keys via command prompt 
+>download aws cli for windows
+>give the command to check wether aws cli is installed /not ==== #aws --version 
+(aws version is shown =if its installed )
+>#aws configure
+access keys:
+secret access keys:
+region:
+text type:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
