@@ -1,9 +1,6 @@
 -------file & directory managemnt :
-
-
-
 --------------------------------
-file format ----->
+ new file format ----->
 --------------------------
 2 types of files :
 -----------------------empty file , content file 
